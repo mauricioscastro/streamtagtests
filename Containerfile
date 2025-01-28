@@ -1,3 +1,3 @@
 FROM tools:latest
-ADD https://github.com/mauricioscastro/kcdump/releases/download/v0.0.1/kcdump /tmp/kcd
-CMD while true; do uname -a; echo -n "."; sleep 60; done
+ADD --chmod=755 https://github.com/mauricioscastro/kcdump/releases/download/v0.0.1/kcdump /tmp/kcd
+CMD uname -a; while true; do echo -n "."; sleep 60; done
