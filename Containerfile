@@ -1,2 +1,2 @@
-FROM busybox
-CMD while true; do sleep 60; echo -n "."; done
+FROM tools:latest
+CMD while true; do uname -a; echo -n "."; sleep 60; done
